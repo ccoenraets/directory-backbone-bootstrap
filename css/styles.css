@@ -1,7 +1,7 @@
 body {
     font-family: source-sans-pro, sans-serif;
     font-size: 15px;
-    /*padding-top: 60px;*/
+    padding-top: 60px;
     /*padding-bottom: 40px;*/
 }
 
@@ -19,3 +19,12 @@ body {
 .no-reports {
     display: none;
 }
+
+@media (max-width: 979px) {
+
+    body {
+        padding-top: 0;
+    }
+
+}
+
