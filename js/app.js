@@ -36,7 +36,9 @@ directory.Router = Backbone.Router.extend({
         $('body').html(directory.shellView.render().el);
         // Close the search dropdown on click anywhere in the UI
         $('body').click(function () {
-            $('.dropdown').removeClass("open");
+            if (!$("#searchText").is(":focus")) {
+                $('#searchForm').removeClass("open");
+            }
         });
         this.$content = $("#content");
     },
