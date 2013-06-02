@@ -13,15 +13,25 @@ directory.ShellView = Backbone.View.extend({
 
     events: {
         "keyup .search-query": "search",
+        "focus .search-query": "search",
         "keypress .search-query": "onkeypress"
     },
 
     search: function (event) {
         var key = $('#searchText').val();
+        if (key == '') {
+            // do not show all results if there's no search text
+            $('#searchForm').removeClass('open');
+            return;
+        }
         this.searchResults.fetch({reset: true, data: {name: key}});
         var self = this;
         setTimeout(function () {
-            $('.dropdown').addClass('open');
+            if (self.searchResults.length) {
+                $('#searchForm').addClass('open');
+            } else {
+                $('#searchForm').removeClass('open');
+            }
         });
     },
 
