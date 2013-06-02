@@ -27,6 +27,7 @@ directory.Router = Backbone.Router.extend({
 
     routes: {
         "":                 "home",
+        "browse":           "browse",
         "contact":          "contact",
         "employees/:id":    "employeeDetails"
     },
@@ -52,6 +53,17 @@ directory.Router = Backbone.Router.extend({
         }
         this.$content.html(directory.homelView.el);
         directory.shellView.selectMenuItem('home-menu');
+    },
+
+    browse: function () {
+        if (!directory.browseView) {
+            directory.browseView = new directory.BrowseView();
+            directory.browseView.render();
+        } else {
+            directory.browseView.delegateEvents();
+        }
+        this.$content.html(directory.browseView.el);
+        directory.shellView.selectMenuItem('browse-menu');
     },
 
     contact: function () {
@@ -80,7 +92,7 @@ directory.Router = Backbone.Router.extend({
 });
 
 $(document).on("ready", function () {
-    directory.loadTemplates(["HomeView", "ContactView", "ShellView", "EmployeeView", "EmployeeSummaryView", "EmployeeListItemView"],
+    directory.loadTemplates(["HomeView", "BrowseView", "ContactView", "ShellView", "EmployeeView", "EmployeeSummaryView", "EmployeeListItemView"],
         function () {
             directory.router = new directory.Router();
             Backbone.history.start();
