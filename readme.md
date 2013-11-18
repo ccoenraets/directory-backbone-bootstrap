@@ -1,5 +1,10 @@
 ## Employee Directory ##
 
+Changes I've done:
+- Upgraded to Bootstrap 3
+
+[Bootstrap 3 Demo](http://github.urbanoalvarez.es/directory-backbone-bootstrap)
+
 ### Sample Application built with Backbone.js and Twitter Bootstrap ###
 
 "Backbone Directory" is a simple Employee Directory application built with [Backbone.js](http://backbonejs.org) and [Twitter Bootstrap] (http://twitter.github.io/bootstrap/).
