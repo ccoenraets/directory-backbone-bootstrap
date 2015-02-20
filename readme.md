@@ -3,7 +3,7 @@
 Changes I've done:
 - Upgraded to Bootstrap 3
 
-[Bootstrap 3 Demo](http://github.urbanoalvarez.es/directory-backbone-bootstrap)
+[Bootstrap 3 Demo](http://urbanoalvarez.es/directory-backbone-bootstrap/)
 
 ### Sample Application built with Backbone.js and Twitter Bootstrap ###
 
