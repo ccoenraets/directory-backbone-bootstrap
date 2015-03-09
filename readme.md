@@ -5,6 +5,8 @@ Changes I've done:
 
 [Bootstrap 3 Demo](http://urbanoalvarez.es/directory-backbone-bootstrap/)
 
+I've also done an [Angularjs + Bootstrap + Grunt + Bower](https://github.com/aurbano/angular-requirejs-bower-grunt) similar version, if interested.
+
 ### Sample Application built with Backbone.js and Twitter Bootstrap ###
 
 "Backbone Directory" is a simple Employee Directory application built with [Backbone.js](http://backbonejs.org) and [Twitter Bootstrap] (http://twitter.github.io/bootstrap/).
