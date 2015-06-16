@@ -22,3 +22,4 @@ If you want to experiment the application with other persistence layers, downloa
 - [directory-rest-php](https://github.com/ccoenraets/directory-rest-php) (PHP implementation)
 - directory-rest-java (Java implementation coming soon)
 
+[![Analytics](https://ga-beacon.appspot.com/UA-3181088-16/employee-backbone-bootstrap/readme)](https://github.com/aurbano)
